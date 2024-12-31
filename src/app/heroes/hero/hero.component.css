@@ -1,0 +1,13 @@
+td{
+  font-size: large;
+  font-weight: bold;
+}
+dd{
+  font-size: medium;
+  font-style: italic;
+  padding-left: 1vw;
+}
+
+dl{
+  padding: 2rem;
+}

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CounterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { DragonBallZModule } from './dragon-ball-z/dragon-ball-z.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     AppRoutingModule,
     CounterModule,
-    HeroesModule
+    HeroesModule,
+    DragonBallZModule
 ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,4 +18,9 @@ export class DragonBallMainPage {
     console.log('MAIN', character)
     this.characters.push(character);
   }
+
+  onDeleteCharacter(index: number): void {
+    console.log('MAIN', index)
+    this.characters.splice(index, 1);
+  }
 }

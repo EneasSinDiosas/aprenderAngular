@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
@@ -10,10 +10,12 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class CharacterListComponent {
   @Input() characterList: Character[] = [];
+  @Output() onDeleteEmitter: EventEmitter<number> = new EventEmitter();
 
   onDeleteCharacter(index: number): void{
     //TODO Eliminar un personaje de la lista.
-    console.log(index)
+    console.log('list', index)
+    this.onDeleteEmitter.emit(index);
   }
 
 }

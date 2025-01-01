@@ -10,12 +10,12 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class CharacterListComponent {
   @Input() characterList: Character[] = [];
-  @Output() onDeleteEmitter: EventEmitter<number> = new EventEmitter();
+  @Output() onDeleteEmitter: EventEmitter<string> = new EventEmitter();
 
-  onDeleteCharacter(index: number): void{
+  onDeleteCharacter(id: string): void{
     //TODO Eliminar un personaje de la lista.
-    console.log('list', index)
-    this.onDeleteEmitter.emit(index);
+    console.log('list', id)
+    this.onDeleteEmitter.emit(id);
   }
 
 }
